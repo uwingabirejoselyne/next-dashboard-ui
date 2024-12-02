@@ -8,7 +8,6 @@ const UserCard = ({type}:{type:string}) => {
       </div>
       <h1 className="text-2xl font-semibold my-4">1,234</h1>
       <h2 className="capitalise text-sm font-font-medium text-gray-500">{type}'s</h2>
-
     </div>
   )
 }
