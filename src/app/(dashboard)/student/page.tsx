@@ -6,7 +6,7 @@ const StudentPage = () => {
   return (
     <div className="p-4 flex gap-4 flex-col xl:flex-row">
       <div className="w-full xl:w-2/3">
-      <div className="h-full bg-white rounde-md p-4">
+      <div className="h-full bg-white rounded-md p-4">
         <h1 className="text-xl font-semi-bold">Schedule(4A)</h1>
         <BigCalendar/>
       </div>

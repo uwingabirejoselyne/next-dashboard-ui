@@ -16,7 +16,6 @@ const BigCalendar = () => {
   };
 
   return (
-    <div style={{ height: "100vh", padding: "20px" }}>
       <Calendar
         localizer={localizer}
         events={calendarEvents}
@@ -27,7 +26,6 @@ const BigCalendar = () => {
         onView={handleOnChangeView}
         style={{ height: "100%" }}
       />
-    </div>
   );
 };
 
