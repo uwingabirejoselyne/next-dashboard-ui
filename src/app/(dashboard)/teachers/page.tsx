@@ -1,6 +1,7 @@
 import TableSearch from '@/components/TableSearch'
 import React from 'react'
 import Image from 'next/image'
+import Pagination from '@/components/Pagination'
 
 const TeacherListPage = () => {
   return (
@@ -22,8 +23,7 @@ const TeacherListPage = () => {
           </div>
         </div>
       </div>
-      <div></div>
-      <div></div>
+      <Pagination/>
     </div>
   )
 }
