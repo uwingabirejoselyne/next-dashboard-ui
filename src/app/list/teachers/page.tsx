@@ -56,7 +56,7 @@ const columns =[
 ]
 const TeacherListPage = () => {
   const renderRow =(item:Teacher) =>(
-    <tr key={item.id}>
+    <tr key={item.id} className='border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight'>
       <td className='flex items-center gap-4 p-4'>
         <Image src={item.photo} alt='' width={40} height={40} className='hidden md:block w-10 h-10 rounded-full object-cover'/>
         <div className='flex flex-col'>
@@ -72,12 +72,12 @@ const TeacherListPage = () => {
       <td>
         <div className="flex items-center gap-2">
           <Link href={`/list/teachers/${item.id}`}>
-          <button className='h-7 w-7 flex item justify-center rounded-full bg-lamaSky '>
+          <button className='h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky '>
             <Image src="/view.png" alt='' width={16} height={16}/>
           </button>
           </Link>
           {role ==="admin"&&(
-             <button className='h-7 w-7 flex item justify-center rounded-full bg-lamaPurple '>
+             <button className='h-7 w-7 flex items-center justify-center rounded-full bg-lamaPurple '>
              <Image src="/delete.png" alt='' width={16} height={16}/>
            </button>
           )}
