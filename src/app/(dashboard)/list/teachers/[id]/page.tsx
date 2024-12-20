@@ -31,11 +31,40 @@ const SingleTeacherPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1"></div>
+          <div className="flex-1 flex gap-4 justify-between flex-wrap">
+            <div className="bg-white w-full rounded-md p-4 flex gap-4 md:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image src="/singleAttendance.png" alt="" width={24} height={24} className="w-6 h-6"/>
+              <div className="">
+                <h1 className="text-xl font-bold">90%</h1>
+                <span className="text-sm text-gray-400">Attendence</span>
+              </div>
+            </div>
+            <div className="bg-white w-full rounded-md p-4 flex gap-4 md:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image src="/singleBranch.png" alt="" width={24} height={24} className="w-6 h-6"/>
+              <div className="">
+                <h1 className="text-xl font-bold">2</h1>
+                <span className="text-sm text-gray-400">Branches</span>
+              </div>
+            </div>
+            <div className="bg-white w-full rounded-md p-4 flex gap-4 md:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image src="/singleLesson.png" alt="" width={24} height={24} className="w-6 h-6"/>
+              <div className="">
+                <h1 className="text-xl font-bold">6</h1>
+                <span className="text-sm text-gray-400">Lessons</span>
+              </div>
+            </div>
+            <div className="bg-white w-full rounded-md p-4 flex gap-4 md:w-[48%] xl:w-[45%] 2xl:w-[48%]">
+              <Image src="/singleClass.png" alt="" width={24} height={24} className="w-6 h-6"/>
+              <div className="">
+                <h1 className="text-xl font-bold">2</h1>
+                <span className="text-sm text-gray-400">classes</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
-      <div className="w-full xl:w-2/3">R</div>
+      <div className="w-full xl:w-1/3">R</div>
     </div>
   )
 }
