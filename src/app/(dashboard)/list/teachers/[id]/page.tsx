@@ -2,6 +2,7 @@ import Announcements from "@/components/Announcements"
 import BigCalendar from "@/components/BigCalendar"
 import Image from "next/image"
 import Link from "next/link"
+import Performance from "@/components/Performance"
 const SingleTeacherPage = () => {
   return (
     <div className="flex flex-col p-4 gap-4 xl:flex-row">
@@ -83,6 +84,7 @@ const SingleTeacherPage = () => {
 
         </div>
       </div>
+      <Performance/>
       <Announcements/>
       </div>
     </div>
