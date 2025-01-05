@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const FormModal = ({table,type,data,id}:{
     table:
-    "teacher" | "student" | "parent"| "subject"| "class"| "lesson"| "exams"| "assignement"| "result"| "attendence"| "event"| "announcement";
+    "teacher" | "student" | "parent"| "subject"| "class"| "lesson"| "exam"| "assignment"| "result"| "attendence"| "event"| "announcement";
     type:"create" | "update" | "delete";
     data?:any;
     id?:number;

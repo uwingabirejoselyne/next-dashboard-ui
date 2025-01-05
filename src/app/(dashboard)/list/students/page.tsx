@@ -65,19 +65,15 @@ const StudentListPage = () => {
       <td className='hidden md:table-cell'>{item.phone}</td>
       <td className='hidden md:table-cell'>{item.address}</td>
       <td>
-        <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
-          <button className='h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky '>
-            <Image src="/view.png" alt='' width={16} height={16}/>
-          </button>
-          </Link>
-          {role ==="admin"&&(
-          //    <button className='h-7 w-7 flex items-center justify-center rounded-full bg-lamaPurple '>
-          //    <Image src="/delete.png" alt='' width={16} height={16}/>
-          //  </button>
-          <FormModal table="student" type='delete' id={item.id}/>
+      <div className="flex items-center gap-2">
+                {role ==="admin"&&(
+          <>
+        <FormModal table="student" type='update' data={item}/>
+        <FormModal table="student" type='delete' id={item.id}/>
+          </>
+
           )}
-        </div>
+                </div>
       </td>
     </tr>
  )
